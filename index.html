@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--get rid of this-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--remove-->
+    <title>Hosoo Cha</title>
+    <!-- Icone
+    <link rel="icon" type="image/x-icon" href="https://cws.auckland.ac.nz/gas/api/FavIcon">
+    -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!--nav bar-->
+
+        <nav class="navbar nav1">
+          <div class="logo">
+            <a href="#" class="nav-logo">Hosoo
+              <!--add logo image here-->
+            </a>
+          </div>
+          <!--making nav bar-->
+          <ul class="nav-links">
+            <div class="navToggleSlider" id="navToggle" ></div>
+            <li>
+              <button class="tablink" onclick="openTab(event, 1, 'home')" id="defaultOpen">Home</button>
+            </li>
+            <li>
+              <button class="tablink" onclick="openTab(event, 2, 'about')">About</button>
+            </li>
+            <li>
+              <button class="tablink" onclick="openTab(event, 3, 'projects')">Projects</button>
+            </li>
+            <li>
+              <button class="tablink" onclick="openTab(event, 4, 'contact')">Contact</button>
+            </li>
+          </ul>
+          <!--burger line-->
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </nav>
+
+
+
+    <div class="container">
+      <div class="pages">
+        <!--Home Page-->
+        <div id="home" class="tabContent one">
+          <div class="main home">
+            <div class="header-btn-flex">
+              <div class="main-container">
+                  <h1 id="changeText"> Hello</h1>
+                  <div class="name-container">
+                    <h2 class="name-Text" id="nameText">I'm Hosoo Cha</h2>
+                  </div>
+                  <div class="folded-text" id="name-3DText">FRONTEND DEVELOPER</div>
+              </div>
+              <div class="btn-container">
+                  <button class="main-btn" id="homeButton" onclick="openTab(event, 3, 'projects')">Check out my work</button>
+              </div>
+            </div>
+            <div class="arr-container">
+              <div class="arr left" id="arr1" onclick="slide(event, 'prev', 'home')"><div></div></div>
+              <div class="arr right"  id="arr2" onclick="slide(event, 'next', 'about')"><div></div></div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!--About page-->
+        <div id="about" class="tabContent two">
+          <div class="main about">
+            <div class="about-tab">
+              <div class="about-text" id="aboutText">
+                <h1>About</h1>
+                  <p>Hi Im Hosoo Cha.</p>
+                  <p>Im a graduate of the Univeristy of Auckland. <br>I majored in Physics and Math, and further gained a diploma in Computer Science.</p>
+                  <p>I am a highly motivated Frontend Developer with a strong passion for building websites that provide great user experience.
+                  <p>I work primarily with React and Javascript. <br> I am currently learning Node.</p>
+                  <p>Download my Resume</p>
+              </div>
+              <div class="arr-container">
+                <div class="arr left" id="arr3"  onclick="slide(event, 'prev', 'home')"><div></div></div>
+                <div class="arr right" id="arr4" onclick="slide(event, 'next', 'projects')"><div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!--Project page-->
+        <div id="project" class="tabContent three">
+          <div class="main project">
+            <div class="project-tab">
+              <div class="project-title" id="projTitle">
+                <h1>My Projects</h1>
+
+                  
+              </div>
+              <div class="arr-container">
+                <div class="arr left" id="arr5" onclick="slide(event, 'prev', 'about')"><div></div></div>
+                <div class="arr right" id="arr6" onclick="slide(event, 'next', 'contact')"><div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Contact page-->
+        <div id="contact" class="tabContent four">
+          <div class="main contact">
+            <div class="contact-tab">
+              <div class="contacts-container" id="contactText">
+                <h1>Get In Touch</h1>
+                <h2>Do you have any queries or ideas? <br>Feel free to inbox me!</h2>
+                <a href = "mailto: hosoo.cha@gmail.com">hosoo.cha@gmail.com</a>
+              </div>
+                <div class="arr-container">
+                <div class="arr left" id="arr7" onclick="slide(event, 'prev', 'projects')"><div></div></div>
+                <div class="arr right" id="arr8" onclick="slide(event, 'next', 'contact')"><div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
